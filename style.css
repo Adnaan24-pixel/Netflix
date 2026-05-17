@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    font-family: arial;
+    border: border-box;
+}
+
+/** header **/
+.main {
+    background-color: rgba(0,0,0,0.8);
+    background-blend-mode: darken;
+    background-image: url(hero-img.jpeg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    font-size: 20px;
+    display: flex;
+    padding-left: 145px;
+}
+
+.logo {
+    margin-top: 20px;
+    background-image: url(netflix2.png);
+    background-size: cover;
+    height: 45px;
+    width: 160px;
+    margin-right: 950px;
+}
+
+button {
+    height: 32px;
+    width: 130px;
+    background-color: #ffffff19;
+    border: 1px solid grey;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px; 
+    margin-top: 20px;
+}
+
+.lang-button i {
+    margin-right: 6px;
+}
+
+.fa-caret-down {
+    font-size: 8px;
+    margin-left: 8px;
+}
+
+.sign-button {
+    font-weight:bold;
+    margin-left: 25px;
+    width: 80px;
+    background-color: red;
+    border: 0;
+    transition: background-color 0.3s ease;
+}
+
+
+.sign-button:hover {
+    background-color: rgb(143, 41, 41);
+}
+
+.lang-button:active {
+    border: 2px solid white;
+}
+
+
+.hero-content {
+    min-width: 1280px;
+    min-height: 80vh;
+    margin-top: 180px;
+    text-align: center;
+    color: white;
+    padding: 32px;
+    padding-top: 0;
+}
+
+
+.hero-head {
+    height: 140px;
+    width: 585px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    font-size: 55px;
+}
+
+.price {
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25px;
+    width: 585px;
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+
+/** box1 **/
+.box1 input {
+    height: 44px;
+    width: 340px;
+    padding-left: 15px;
+    color: white;
+    background-color: #ffffff06;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.fill:focus {
+    border: 2px solid white;
+    outline: none;
+}
+
+.get {
+    height: 55px;
+    width: 210px;
+    font-size: 25px;
+    background-color: rgb(253, 17, 17);
+}
+
+.trending {
+    height: 100px;
+    width: 103%;
+    margin-top: 200px;
+    margin-left: -25px;
+    border-radius: 40% 40% 0 0;
+    border-bottom: 0;
+    border-top: 5px solid red;
+    background: linear-gradient(to bottom, rgb(20,20,80), black);
+    position: relative;
+    z-index: 1;
+}
+
+.trending-content {
+    margin: 50px;
+    color: white;
+    font-size: 24px;    
+    text-align: left;
+    padding-left: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.background {
+    margin-top: -100px;
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.movie-all {
+    padding-left: 148px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movie-all div img{
+    height: 250px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.next button {
+    margin-top: 60px;
+    margin-left: -25px;
+    height: 120px;
+    width: 24px;
+    border: 0;
+    background-color: #ffffff1a;
+    border-radius: 8px;
+}
+
+.next button i {
+    margin-left: -6px;
+    font-size: 20px;
+}
+
+.movie-all img:hover{
+    height: 260px;
+    width: 190px;
+    transition: all ease-in-out 0.3s;
+}
+
+.next button:hover {
+    background-color: #ffffff4e;
+}
+
+.movie-all div {
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    left: -25px;
+    bottom: -10px;
+    font-size: 100px;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px grey;
+    color: rgb(65,65,65);
+    -webkit-text-fill-color: black;
+    z-index: 2;
+}
+
+.join-head {
+    color: white;
+    margin-top: 100px;
+    padding-left: 140px;
+    padding-bottom: 20px;
+}
+
+.join {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.join div {
+    padding: 24px 16px 28px 16px;
+    height: 200px;
+    width: 300px; 
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(135deg, #1d1f4f, #210d19);
+    
+}
+
+.join h3 {
+    font-size: 24px;
+}
+
+.join p {
+    color: #ffffffb3;
+    font-weight: bold;
+}
+
+.icon {
+    margin-left: 230px;
+    margin-top: 40px;
+}
+
+.question {
+    margin-top: 80px;
+    color: white;
+    padding-left: 130px;
+}
+
+.question div button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    height: 80px;
+    width: 1380px;
+    background-color: #ffffff34;
+    text-align: left;
+    border: 0;
+    border-radius: 0;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.question i {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: lighter;
+    transition: transform 0.3s ease;
+}
+
+.question i:active {
+    transform: rotate(45deg);
+}
+
+.question div button:hover {
+    background-color: #ffffff41;
+}
+
+.box2 {
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+.box2 input{
+    height: 50px;
+    width: 560px;
+    background-color: #ffffff10;
+}
+
+.get {
+    height: 60px;
+    width: 210px;
+    border: 0;
+}
+
+footer {
+    background-color: black;
+    color: #ffffffb3;
+    height: 420px;
+}
+
+.foot-panel1 {
+    padding-left: 140px;
+    font-size: 16px;
+}
+
+.foot-panel2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -125px;
+}
+
+ul a{
+    margin-top: 20px;
+    color: #ffffffb3;
+    display: block;
+    font-size: 14px;
+}
+
+.languages2 {
+    margin-top: 40px;
+    padding-left: 150px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 35px;
+    padding-left: 140px;
+}
+
+.protected {
+    font-size: 13px;
+    color: #ffffff80;
+    margin-top: 35px;
+    padding-left: 140px;
+}
