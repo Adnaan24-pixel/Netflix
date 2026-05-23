@@ -10,28 +10,29 @@
     background-blend-mode: darken;
     background-image: url(hero-img.jpeg);
     background-size: cover;
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 
 .navbar {
     font-size: 20px;
     display: flex;
-    padding-left: 145px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
-    margin-top: 20px;
+    margin: 5px;
     background-image: url(netflix2.png);
     background-size: cover;
-    height: 45px;
-    width: 160px;
-    margin-right: 950px;
+    min-height: 40px;
+    width: 148px;
 }
 
 button {
-    height: 32px;
-    width: 130px;
+    min-height: 30px;
+    width: 100%;
     background-color: #ffffff19;
     border: 1px solid grey;
     color: white;
@@ -51,8 +52,7 @@ button {
 
 .sign-button {
     font-weight:bold;
-    margin-left: 25px;
-    width: 80px;
+    min-width: 80px;
     background-color: red;
     border: 0;
     transition: background-color 0.3s ease;
@@ -69,39 +69,34 @@ button {
 
 
 .hero-content {
-    min-width: 1280px;
-    min-height: 80vh;
-    margin-top: 180px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
     text-align: center;
     color: white;
-    padding: 32px;
-    padding-top: 0;
 }
 
 
 .hero-head {
-    height: 140px;
-    width: 585px;
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
+    max-width: 100%;
     margin-bottom: 16px;
-    font-size: 55px;
+    font-size: clamp(30px, 5vw, 60px);
 }
 
 .price {
     font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    height: 25px;
-    width: 585px;
+    margin: 10px;
+    height: auto;
+    max-width: 100%;
     margin-bottom: 32px;
     font-size: 20px;
 }
 
 /** box1 **/
 .box1 input {
-    height: 44px;
-    width: 340px;
+    height: 45px;
+    width: 30%;
     padding-left: 15px;
     color: white;
     background-color: #ffffff06;
@@ -109,6 +104,7 @@ button {
     font-weight: bold;
     border-radius: 5px;
     border: 1px solid gray;
+    flex-wrap: wrap;
 }
 
 .fill:focus {
@@ -117,17 +113,17 @@ button {
 }
 
 .get {
-    height: 55px;
-    width: 210px;
+    flex-wrap: wrap;
+    height: 45px;
+    width: 10%;
     font-size: 25px;
     background-color: rgb(253, 17, 17);
+    margin-bottom: 20px;
 }
 
 .trending {
-    height: 100px;
-    width: 103%;
-    margin-top: 200px;
-    margin-left: -25px;
+    height: auto;
+    width: 100%;
     border-radius: 40% 40% 0 0;
     border-bottom: 0;
     border-top: 5px solid red;
@@ -137,11 +133,10 @@ button {
 }
 
 .trending-content {
-    margin: 50px;
+    margin: 50px 0 60px 50px;
     color: white;
-    font-size: 24px;    
+    font-size: clamp(20px, 5vw, 30px);    
     text-align: left;
-    padding-left: 100px;
     position: relative;
     z-index: 2;
 }
@@ -153,16 +148,16 @@ button {
 }
 
 .movie-all {
-    padding-left: 148px;
     margin-top: 55px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .movie-all div img{
-    height: 250px;
-    width: 180px;
+    height: auto;
+    max-width: 90%;
     border-radius: 10px;
+    margin-top: 45px;
 }
 
 .next button {
@@ -181,9 +176,9 @@ button {
 }
 
 .movie-all img:hover{
-    height: 260px;
-    width: 190px;
-    transition: all ease-in-out 0.3s;
+    height: auto;
+    max-width: 100%;
+    transition: 0.3s;
 }
 
 .next button:hover {
@@ -247,7 +242,7 @@ button {
 .question {
     margin-top: 80px;
     color: white;
-    padding-left: 130px;
+    padding: 100px;
 }
 
 .question div button {
@@ -256,7 +251,7 @@ button {
     align-items: center;
     padding-left: 24px;
     height: 80px;
-    width: 1380px;
+    width: 100%;
     background-color: #ffffff34;
     text-align: left;
     border: 0;
@@ -340,4 +335,57 @@ ul a{
     color: #ffffff80;
     margin-top: 35px;
     padding-left: 140px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: auto;
+        width: 90px;
+        margin: 30px 10px 0 0;
+    }
+    
+    .hero-content {
+        padding-top: 80px;
+    }
+
+    .movie-all {
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .join-head {
+        font-size: clamp(15px, 5vw, 30px);
+        padding: 10px;
+    }
+    
+    .join {
+        flex-wrap: wrap;
+        padding-left: 15px;
+        gap: 20px;
+    }
+
+    .question {
+        padding: 10px;
+        padding-left: 15px;
+    }
+
+    .question button {
+        height: auto;
+        width: 99%;
+    }
+
+    .box2 p {
+        flex-wrap: wrap;
+    }
+
+    .box2 input {
+        width: 80%;
+        margin: 10px;
+    }
+
+    .get {
+        height: 50px;
+        width: 40%;
+    }
 }
