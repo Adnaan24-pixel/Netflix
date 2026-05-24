@@ -382,7 +382,7 @@ ul a{
         max-width: 150px;
     }
 
-    .next {
+    .next button {
         display: none;
     }
 
